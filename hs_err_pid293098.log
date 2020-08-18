@@ -1,0 +1,32 @@
+#
+# A fatal error has been detected by the Java Runtime Environment:
+#
+#  SIGSEGV (0xb) at pc=0x00007f0d829370ad, pid=293098, tid=293114
+#
+# JRE version: OpenJDK Runtime Environment (11.0.7+10) (build 11.0.7+10-post-Ubuntu-3ubuntu1)
+# Java VM: OpenJDK 64-Bit Server VM (11.0.7+10-post-Ubuntu-3ubuntu1, mixed mode, sharing, tiered, compressed oops, g1 gc, linux-amd64)
+# Problematic frame:
+# C  [libjimage.so+0x30ad]
+#
+# Core dump will be written. Default location: Core dumps may be processed with "/lib/systemd/systemd-coredump %P %u %g %s %t 9223372036854775808 %h" (or dumping to /home/bruno/eclipse-workspace/Bingoo/core.293098)
+#
+# If you would like to submit a bug report, please visit:
+#   https://bugs.launchpad.net/ubuntu/+source/openjdk-lts
+#
+
+---------------  S U M M A R Y ------------
+
+Command Line: -agentlib:jdwp=transport=dt_socket,suspend=y,address=localhost:38767 -javaagent:/home/bruno/eclipse/java-2020-06/eclipse/configuration/org.eclipse.osgi/215/0/.cp/lib/javaagent-shaded.jar -Dfile.encoding=UTF-8 bingo.Main
+
+Host: Intel(R) Core(TM) i5-5200U CPU @ 2.20GHz, 4 cores, 7G, Linux Mint 20 Ulyana
+Time: Tue Aug 18 14:01:51 2020 -03 elapsed time: 22480 seconds (0d 6h 14m 40s)
+
+---------------  T H R E A D  ---------------
+
+Current thread (0x00007f0d7c180000):  JavaThread "Signal Dispatcher" daemon [_thread_in_vm, id=293114, stack(0x00007f0d8017a000,0x00007f0d8027b000)]
+
+Stack: [0x00007f0d8017a000,0x00007f0d8027b000],  sp=0x00007f0d802781f0,  free space=1016k
+Native frames: (J=compiled Java code, A=aot compiled Java code, j=interpreted, Vv=VM code, C=native code)
+C  [libjimage.so+0x30ad]
+C  [libjimage.so+0x3da2]
+C  [libjimage.so+0x42b1]
